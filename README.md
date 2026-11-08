@@ -2,7 +2,9 @@
 
 Aplicație Android pentru blocarea și aprinderea ecranului printr-o husă cu magnet, folosind magnetometrul necalibrat.
 
-[Descarcă Husa 1.1.1 și ghidurile PDF](https://github.com/caiuspoputa-debug/husa-blocare-ecran/releases/tag/v1.1.1)
+[Descarcă Husa 1.1.1 și ghidurile PDF](https://caiuspoputa-debug.github.io/aplicatii/#husa)
+
+[Descarcă direct APK-ul Husa 1.1.1](https://caiuspoputa-debug.github.io/aplicatii/downloads/husa/1.1.1/Husa-Blocare-Ecran-1.1.1.apk). Fișierul este servit direct de GitHub Pages și are aceeași semnătură și sumă SHA-256 ca APK-ul din release.
 
 Versiunea 1.1.1 corectează continuitatea permisiunilor semnate la schimbarea certificatului. Această incompatibilitate din 1.1 putea împiedica actualizarea peste Husa 1.0, afișând „Aplicația nu este instalată”.
 
