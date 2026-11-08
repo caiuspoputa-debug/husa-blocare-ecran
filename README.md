@@ -1,25 +1,23 @@
 # Husa blocare ecran
 
-Aplicație Android pentru blocarea și aprinderea ecranului printr-o husă cu magnet, folosind magnetometrul necalibrat.
+[Descarcă Husa 1.1.2 și cele două ghiduri PDF](https://caiuspoputa-debug.github.io/aplicatii/#husa)
 
-[Descarcă Husa 1.1.1 și ghidurile PDF](https://caiuspoputa-debug.github.io/aplicatii/#husa)
+[Descărcare directă APK 1.1.2](https://caiuspoputa-debug.github.io/aplicatii/downloads/husa/1.1.2/Husa-Blocare-Ecran-1.1.2.apk)
 
-[Descarcă direct APK-ul Husa 1.1.1](https://caiuspoputa-debug.github.io/aplicatii/downloads/husa/1.1.1/Husa-Blocare-Ecran-1.1.1.apk). Fișierul este servit direct de GitHub Pages și are aceeași semnătură și sumă SHA-256 ca APK-ul din release.
+Aplicație Android pentru blocarea și aprinderea ecranului printr-o husă cu magnet, folosind magnetometrul necalibrat. Acest repository distribuie APK-ul semnat și documentația.
 
-Versiunea 1.1.1 corectează continuitatea permisiunilor semnate la schimbarea certificatului. Această incompatibilitate din 1.1 putea împiedica actualizarea peste Husa 1.0, afișând „Aplicația nu este instalată”.
+## Diagnostic și actualizări
 
-Versiunea 1.1 include configurarea timpilor, sensibilității și energiei, solicitarea permisiunilor, o pictogramă nouă și un jurnal local de diagnostic.
+În Diagnostic: Copiază diagnosticul, Distribuie, Salvează fișier .txt și selectarea textului prin apăsare lungă. Raportul include jurnalul și starea telefonului, energiei, permisiunilor și reglajelor la export.
 
-Acest repository distribuie APK-ul semnat și documentația de instalare și configurare.
+În meniul cu trei puncte: Verifică actualizările. Verificarea automată se face cel mult o dată la 24 de ore, când aplicația este deschisă. O versiune nouă apare într-un popup. Descărcarea APK este verificată înainte de deschiderea instalatorului, iar instalarea necesită confirmarea Android.
 
-## Configurare
+## Configurare și compatibilitate
 
-Reglajele aplicației se salvează automat. Android cere confirmarea utilizatorului pentru accesibilitate, notificări și excepția de baterie. Opțiunile Samsung „Menține deschisă” din Recente și regulile modului Somn sunt pași manuali explicați în aplicație.
+Reglajele se salvează automat. Android cere confirmarea utilizatorului pentru accesibilitate, notificări, excepția de baterie și instalarea actualizărilor. Opțiunile Samsung Menține deschisă și regulile modului Somn rămân pași manuali explicați în aplicație.
 
-## Verificare și compatibilitate
+Identificator: `com.example.husablocareecran`. Versiune `1.1.2`, build `4`. Se instalează peste versiunea existentă. Pe Android 13+ folosește certificatul personal Caius Poputa, SHA-256 `95c79cbc9e68e31611c477f8cc27050a682b4ee616a5c25d6cbc40005f1d2bf6`, cu rotația corectată de la certificatul Husa 1.0.
 
-Identificator Android: `com.example.husablocareecran`. Versiune: `1.1.1`, build `3`.
+Logica husei este neschimbată față de 1.1.1. Problema din modul Somn rămâne în investigație; exportul permite colectarea diagnosticului.
 
-Pe Android 13+ pachetul folosește certificatul personal Caius Poputa, SHA-256 `95c79cbc9e68e31611c477f8cc27050a682b4ee616a5c25d6cbc40005f1d2bf6`. Include lanțul de rotație de la cheia Husa 1.0 pentru actualizare cu păstrarea datelor. Compatibilitatea instalării peste aplicația de pe telefon necesită proba pe dispozitiv.
-
-Compilarea release, Lint vital, verificarea semnăturii și alinierea APK au trecut. Testul de regresie al semnăturii a trecut toate cele 27 de verificări: detectează lipsa continuității permisiunilor în 1.1 și confirmă corecția în 1.1.1. Logica husei este neschimbată față de 1.1, unde cele 8 teste au trecut și analiza Lint completă a raportat zero erori. Telefonul țintă este Samsung S25 Ultra. Testarea fizică și testarea în emulator nu au fost efectuate. Problema în modul Somn și la apel rămâne de confirmat cu jurnalul noii versiuni.
+Compilarea release, analiza Lint fără erori, cele 8 teste ale husei, cele 5 teste ale regulilor de actualizare și verificările semnăturii și alinierii APK au trecut. Noile fluxuri nu au fost testate fizic pe telefon sau emulator.
